@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        $(function() {
+            var items =[]; $('input:checkbox[type=checkbox]:checked').each(function(){
+                items.push($(this).val());
+            });
+            
+            console.log(typeof items);
+            console.log(typeof items[0]);
+        });
+    </script>
+</head>
+
+<body>
+    <input type="checkbox" checked value="3">안뇽
+</body></html>
